@@ -19,7 +19,7 @@ set guifont=Source\ Code\ Pro\ ExtraLight:h18
 set pastetoggle=<F7>
 set showcmd
 set background=dark
-colorscheme basic
+colorscheme Tomorrow-Night
 
 set timeout timeoutlen=1000 ttimeoutlen=100 " ensure that `O` does not cause a crazy delay
 
