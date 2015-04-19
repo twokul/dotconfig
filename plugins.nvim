@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'L9'
 Bundle 'tomtom/tlib_vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'chriskempson/tomorrow-theme', { 'rtp': 'vim/' }
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
 Bundle 'twokul/vim-snippets'
@@ -24,7 +25,7 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-markdown'
-Bundle 'scrooloose/syntasticnvim
+Bundle 'scrooloose/syntastic'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'moll/vim-node'
 Plugin 'flazz/vim-colorschemes'
