@@ -12,10 +12,6 @@ nnoremap <leader><space> :noh<cr>
 " Toggle NERDTree
 map <leader>n :NERDTreeToggle<CR>
 
-" Tabs
-noremap <C-T> :tabe<CR>
-noremap <C-G> :tabc<CR>o
-
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
@@ -39,3 +35,14 @@ function! StripWhitespace ()
 endfunction
 
 map <leader>s :call StripWhitespace ()<CR>
+
+" Support for NeoVim terminal emulation splits
+nnoremap <C-T>\| :rightb vsp term:///bin/zsh<CR>
+nnoremap <C-T>- :bel sp term:///bin/zsh<CR>
+
+tnoremap <Esc> <C-\><C-n>
+
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
