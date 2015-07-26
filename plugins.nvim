@@ -31,6 +31,7 @@ Bundle 'moll/vim-node'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'rking/ag.vim'
+Plugin 'yosiat/oceanic-next-vim'
 
 call vundle#end()
 
