@@ -38,7 +38,8 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/vim-github-dashboard' "Browse GitHub events (user dashboard, user/repo activity) in Vim.
+Plugin 'junegunn/limelight.vim' " Hyperfocus-writing in Vim
+Plugin 'junegunn/goyo.vim' " Distraction-free writing in Vim.
 
 call vundle#end()
 

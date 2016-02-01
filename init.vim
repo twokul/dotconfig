@@ -6,3 +6,5 @@ source ~/.nvim/airline.vim
 source ~/.nvim/voogle.vim
 source ~/.nvim/startify.vim
 source ~/.nvim/fzf.vim
+source ~/.nvim/goyo.vim
+source ~/.nvim/limelight.vim
