@@ -1,6 +1,13 @@
-" *******************************
-" * status line			            *
-" *******************************
+" ---------------
+" Airline
+" ---------------
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+let g:airline_theme='solarized'
+
 set laststatus=2                               " always show status line
 set statusline=%<%f\                           " Filename
 set statusline+=%w%h%m%r                       " Options

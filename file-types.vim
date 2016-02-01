@@ -30,5 +30,7 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType scss set iskeyword+=-
 
+au BufRead,BufNewFile *.scss set filetype=scss.css
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars

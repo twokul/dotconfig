@@ -2,7 +2,7 @@
 " Color
 " ---------------
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme solarized
 " Force 256 color mode if available
 if $TERM =~ '-256color'
    set t_Co=256
@@ -14,17 +14,12 @@ endif
 set guifont=Source\ Code\ Pro\ ExtraLight:h18
 set number         " Show line numbers
 set numberwidth=5  " Always use 5 characters for line number gutter
-set ruler          " Ruler on
 set nowrap         " don't wrap lines
 set encoding=utf-8 " Set default encoding to UTF-8
-set laststatus=2   " Always show the statusline
 set cmdheight=2    " Make the command area two lines high
 set cursorline     " Highlight current line
 set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
-if exists('+colorcolumn')
-  set colorcolumn=80 " Color the 80th column differently as a wrapping guide.
-endif
 " Disable tooltips for hovering keywords in Vim
 if exists('+ballooneval')
   " This doesn't seem to stop tooltips for Ruby files
@@ -70,8 +65,7 @@ set ignorecase " Case insensitive search
 set smartcase  " Non-case sensitive search
 set incsearch  " Incremental search
 set hlsearch   " Highlight search results
-set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
-  *.lessc,*/bower_components/*,*/node_modules/*
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,*.lessc,*/bower_components/*,*/node_modules/*
 set wildmode=list:longest,list:full
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
@@ -108,7 +102,9 @@ set t_vb=
 " Mouse support
 set mousehide  " Hide mouse after chars typed
 set mouse=a    " Mouse in all modes
-set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
