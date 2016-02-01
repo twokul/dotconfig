@@ -4,7 +4,7 @@ endif
 
 nnoremap <silent> <expr> <Leader><Leader> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 
-nnoremap <silent> <C-f>f :FZF<cr>
+nnoremap <C-p> :FZF<cr>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
