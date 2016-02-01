@@ -1,4 +1,5 @@
 " set the runtime path to include Vundle and initialize
+set rtp+=~/.fzf
 set rtp+=~/.nvim/bundle/Vundle.vim
 call vundle#begin()
 

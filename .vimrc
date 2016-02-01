@@ -1,4 +1,5 @@
-source ~/.nvim/basic.nvim
+set rtp+=~/.fzf
+source ~/.nvim/config.nvim
 source ~/.nvim/plugins.nvim
 source ~/.nvim/mappings.nvim
 source ~/.nvim/file-types.nvim
