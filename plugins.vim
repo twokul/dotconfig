@@ -40,6 +40,8 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/limelight.vim' " Hyperfocus-writing in Vim
 Plugin 'junegunn/goyo.vim' " Distraction-free writing in Vim.
+Plugin 'elixir-lang/vim-elixir' " Syntax highlighting for Elixir
+Plugin 'mattreduce/vim-mix' " Elixir's build tool, mix
 
 call vundle#end()
 
