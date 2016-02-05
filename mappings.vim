@@ -44,5 +44,20 @@ endfunction
 map <leader>s :call StripWhitespace ()<CR>
 
 " Support for NeoVim terminal emulation splits
-nnoremap <C-T>\| :rightb vsp term:///bin/zsh<CR>
-nnoremap <C-T>- :bel sp term:///bin/zsh<CR>
+
+" Map <Esc> to exit terminal mode
+tnoremap <Esc> <C-\><C-n>
+
+" Map Alt + h,j,k,l to switch windows
+tnoremap <A-h> <C-\><C-n><C-w>h
+tnoremap <A-j> <C-\><C-n><C-w>j
+tnoremap <A-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+
+nnoremap <C-t> <C-n> :tabnew term:///bin/zsh<CR>
+nnoremap <C-t>\| :rightb vsp term:///bin/zsh<CR>
+nnoremap <C-t>- :bel sp term:///bin/zsh<CR>
