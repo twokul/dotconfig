@@ -108,3 +108,7 @@ endif
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+" Syntastic and eslint: show warnings
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
