@@ -1,7 +1,7 @@
 " ---------------
 " Color
 " ---------------
-set background=dark
+set background=light
 colorscheme solarized
 " Force 256 color mode if available
 if $TERM =~ '-256color'
